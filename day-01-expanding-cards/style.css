@@ -34,18 +34,27 @@ h6 {
 }
 .card {
   border-radius: 30px;
-  background-size: auto;
+  background-size: cover ;
   position: relative;
   width: 400px;
+  cursor: pointer;
+  transition: flex .8s ease-in-out;
+  flex: 2;
 }
 .card.active{
-    width: 1200px;
+  flex: 5;
+    /* width: 1200px; */
 }
 .card h3 {
+  opacity: 0;
   color: white;
   position: absolute;
   left: 20px;
   bottom: 20px;
+  transition: opacity 0.5s ease-in-out ;
+}
+.card.active h3{
+  opacity: 1;
 }
 /* For mobile phones: */
 @media only screen and (max-width: 768px) {
@@ -66,7 +75,6 @@ h6 {
   .card h3 {
     color: white;
     position: absolute;
-    /* top: 75px; */
     left: 20px;
   }
 }
