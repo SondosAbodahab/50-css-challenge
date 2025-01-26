@@ -1,0 +1,37 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    height: 100%;
+}
+.menu-container{
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+.circle{
+    background-color: #FF7F50;
+    width:80px;
+    height: 80px;
+    line-height:80px;
+    text-align: center;
+    border-radius: 50%;
+    position: absolute;
+    top: -25px;
+    left: -25px;
+}
+i{
+    position: absolute;
+    top: 50px;
+    left: 40px;
+}
+main{
+    margin: 28px;
+    max-width: 100%;
+    text-align: center;
+}
+img{
+    width: 25rem;
+}
