@@ -24,35 +24,17 @@ const addActiveClass = () => {
       step.classList.add("active");
     }
   });
-  dimeActivateNextBtn();
-  dimeActivatePrevBtn()
+  dimeActivateButtons();
 };
 
-const dimeActivateNextBtn = () => {
-  if (counter === 4) {
-    dimeNextBtn();
-  } else {
-    activateNextBtn();
-  }
-};
-const dimeActivatePrevBtn = () => {
-    if (counter === 1) {
-      dimePrevBtn();
-    } else {
-      activatePrevBtn();
-    }
-  };
-  
-const dimeNextBtn = () => {
-  nextBtn.classList.remove("active");
-};
-const activateNextBtn = () => {
-  nextBtn.classList.add("active");
+const dimeActivateButtons = () => {
+  counter === 4 ? dimeButton(nextBtn) : activateButton(nextBtn);
+  counter === 1 ? dimeButton(prevBtn) : activateButton(prevBtn);
 };
 
-const dimePrevBtn = () => {
-  prevBtn.classList.remove("active");
+const dimeButton = (button) => {
+  button.classList.remove("active");
 };
-const activatePrevBtn = () => {
-  prevBtn.classList.add("active");
+const activateButton = (button) => {
+  button.classList.add("active");
 };
