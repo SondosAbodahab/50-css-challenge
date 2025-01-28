@@ -14,7 +14,7 @@ body{
 h1{
     font-size: 1.5rem;
 }
-div{
+.box{
     width: 200px;
     height: 100px;
     color: white;
@@ -23,12 +23,16 @@ div{
     text-align: center;
     margin: 20px;
     border-radius: 10px;
+    box-shadow: 2px 4px 5px rgba(0 ,0 ,0 ,0.3);
     font-size: 1.3rem;
     opacity: 0;
     transform: translateX(-150px);
-    transition: transform 0.8s ease-out, opacity 0.8s ease-out;
+    transition: transform 1s ease-out, opacity 0.8s ease-out;
 }
-div.visible{
+/* .box:nth-last-of-type(even){
+    transform: translateX(150px);
+} */
+.box.visible{
     opacity: 1;
     transform: translateX(0);
 }
