@@ -10,4 +10,41 @@ body{
     justify-content: center;
     height: 100vh;
     overflow: hidden;
+    background-color: #3774AA;
+}
+form{
+    background-color: #224666;
+    color: #fff;
+    padding: 40px;
+    text-align: center;
+    width: 20rem;
+}
+input{
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid #fff ;
+    color: #fff;
+    width: 90%;
+    height: 30px;
+    margin: 20px 0;
+    outline: none;
+}
+input::placeholder{
+    color: #fff;
+}
+button{
+    width: 90%;
+    height: 40px;
+    background-color: #A0CEE1;
+    border: none;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+h4{
+    font-size: .9rem;
+    /* text-align: left; */
+}
+a{
+    text-decoration: none;
+    color:#A0CEE1 ;
 }
